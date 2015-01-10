@@ -2,12 +2,16 @@
 
 import UIKit
 
-// Create an empty array
+// Create an empty array (type is REQUIRED)
 var tigerNames1:Array<String> = []
 var tigerNames2:[String] = []
 var tigerNames3:[String]
 var tigerNames4 = ["Tigger", "Tigress", "Jacob", "Spar"]
 var tigerAges = [3, 2, 1, 5]
+
+// Create a hybrid type array
+var tigerHybrid = [10, 20, 30.5, "Spar"]
+println("\(tigerHybrid)")
 
 // Array useful properties: isEmpty, count
 var emptyArray:[String] = []
@@ -52,6 +56,8 @@ println("\(tigerNames4)")
 
 tigerNames4.removeAtIndex(2)
 println("\(tigerNames4)")
+
+tigerNames4.removeRange(1...2)
 
 tigerNames4.removeAll(keepCapacity: false)
 println("\(tigerNames4)")
